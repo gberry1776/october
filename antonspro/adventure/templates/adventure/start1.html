@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="{% static 'antonspro/css/adv/adventure.css' %}">
+  <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+  <body>
+You made it!
+  <a href="{% url 'adventure:A2' %}">a2</a>
+
+
+<div id="hero"></div>
+
+<div id="door"></div>
+
+<div id="obj1"></div>
+
+<div id="enemy1" class="enemy1"></div>
+
+<div id="treetop"></div>
+
+
+<script type="text/javascript" src="{% static 'antonspro/js/adv/adventure.js' %}">
+</script>
+  </body>
+</html>

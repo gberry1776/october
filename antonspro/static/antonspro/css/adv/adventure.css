@@ -1,0 +1,58 @@
+body{
+  background-image: url(pics/adv1background.jpg);
+  background-repeat: no-repeat;
+}
+
+#hero{
+  position: absolute;
+  top: 700px;
+  left: 350px;
+  height: 50px;
+  width:50px;
+  background-color: purple;
+  background-image: url(pics/hero.jpg);
+  clip-path: polygon(20% 22%, 27% 14%, 36% 10%, 44% 6%, 72% 10%, 78% 20%, 78% 36%, 74% 46%, 82% 48%,
+                     86% 54%, 86% 68%, 74% 86%, 66% 92%, 38% 92%, 24% 78%, 24% 72%, 16% 72%, 18% 50%, 26% 44%, 30% 42%, 26% 42%, 26% 34%);
+}
+
+#door{
+  position: absolute;
+  top: 179px;
+  left: 355px;
+  height: 50px;
+  width:57px;
+  background-color: brown;
+  opacity: 0;
+
+}
+
+#obj1{
+  position: absolute;
+  top: 555px;
+  left: 614px;
+  height: 50px;
+  width:50px;
+  background-color: red;
+  opacity: 0;
+
+}
+
+#enemy1{
+  position: absolute;
+  top: 250px;
+  left: 220px;
+  height: 50px;
+  width:50px;
+  background-color: red;
+  background-image: url(pics/enemy1.jpg);
+}
+
+#treetop{
+  position: absolute;
+  left: 516px;
+  top: 339px;
+  height: 218px;
+  width:246px;
+  border-radius:70px;
+  background-image: url(pics/treetop.jpg);
+}

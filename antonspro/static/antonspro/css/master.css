@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+  color:black;
+  background-image: url(planetexpress.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}

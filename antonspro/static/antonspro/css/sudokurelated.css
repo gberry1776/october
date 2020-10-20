@@ -1,0 +1,181 @@
+#move {
+  background-image: url(su3.jpg);
+  background-position: relative;left:0px;
+  height: 40px;
+  width: 40px;
+  position:relative;
+  top: 40px;
+  left:45px;
+}
+
+#homenav {
+  border-radius: 5px;
+  margin-top: 4px;
+  padding-right: 61px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height: 40px;
+  width: 80px;
+  background-image: url(navbarpic.jpg);
+  background-position: 80px;
+  color: #B0B0B0;
+
+}
+
+#bignav {
+  border-bottom: 1px solid grey;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+nav {
+  background-color: white;
+}
+
+#sudiv {
+  border: 2px solid black;
+  height: 160px;
+  width:140px;
+  position:absolute;
+  left:280px;
+  top:180px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#drivediv {
+  border: 2px solid black;
+  height: 160px;
+  width:140px;
+  background-image:url(Drivedivpicbackdrop.jpg);
+  background-position:0px 20px;
+  background-repeat: repeat-x;
+  position:absolute;
+  left:80px;
+  top:180px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#jet {
+  background-image:url(Drivedivpic.jpg);
+  width:140px;
+  height:69px;
+  position:absolute;
+  left:80px;
+  top:230px;
+  background-color: black;
+  opacity: .5;
+}
+
+#sidenav {
+  width: 200px;
+}
+
+#aboutnav {
+  position: relative;
+  left: 30px;
+  border-radius: 5px;
+  margin-top: 4px;
+  padding-right: 61px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height: 40px;
+  width: 80px;
+  background-image: url(navbarabout.jpg);
+  background-position: 80px;
+  color: #B0B0B0;
+}
+
+#magicdiv {
+  border: 2px solid black;
+  height: 160px;
+  width:140px;
+  position:absolute;
+  left:80px;
+  top:380px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#magicmove {
+  background-image: url(thuncover.jpg);
+  background-position: relative;left:0px;
+  height: 100px;
+  width: 100px;
+  position:relative;
+  top: 12px;
+  left:16px;
+}
+
+#gamblediv {
+  border: 2px solid black;
+  height: 160px;
+  width:140px;
+  position:absolute;
+  left:280px;
+  top:380px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#gamblemove {
+  background-image: url(gamblecover.jpg);
+  background-position: relative;left:0px;
+  height: 50px;
+  width: 50px;
+  position:relative;
+  top: 35px;
+  left:40px;
+}
+
+#adventurediv {
+  border: 2px solid black;
+  height: 160px;
+  width:140px;
+  position:absolute;
+  left:180px;
+  top:580px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#hero{
+  position: absolute;
+  top: 650px;
+  left: 219px;
+  height: 50px;
+  width:50px;
+  background-color: purple;
+  background-image: url(adv/pics/hero.jpg);
+  clip-path: polygon(20% 22%, 27% 14%, 36% 8%, 44% 6%, 72% 7%, 78% 20%, 78% 36%, 74% 46%, 82% 48%,
+                     86% 54%, 86% 68%, 74% 86%, 66% 92%, 38% 92%, 24% 78%, 24% 72%, 16% 72%, 18% 50%, 26% 44%, 30% 42%, 26% 42%, 26% 34%);
+}
+
+#warpportal{
+  position: absolute;
+  top: 650px;
+  left: 419px;
+  height: 100px;
+  width:100px;
+  background-image: url(adv/pics/warpportal.jpg);
+  z-index: -1;
+}

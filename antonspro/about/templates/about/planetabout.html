@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'antonspro/css/about.css' %}">
+    <script src="http://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar mynav" role='navigation' id="bignav">
+      <div class="container">
+        <a class="navbar-brand mynav" href="{% url 'masterpage' %}" id="homenav"></a>
+  <a href="{% url 'about:general' %}" class="navbar-brand mynav" id="aboutnav"></a>
+        <ul class="nav navbar-nav navbar-right">
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="list-group" id="sidenav">
+      <a href="{% url 'about:general' %}"><button type="button" class="list-group-item">General</button></a>
+      <a href="{% url 'about:aboutpe' %}"><button type="button" class="list-group-item" id="GeneralB">Planet Express app</button></a>
+      <a href="{% url 'about:aboutsu' %}"><button type="button" class="list-group-item">Sudoku puzzle solver</button></a>
+    </div>
+
+  <div class="" id="textbox">
+
+  </div>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="{% static 'antonspro/js/master.js' %}">
+    </script>
+  </body>
+</html>

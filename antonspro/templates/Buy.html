@@ -1,0 +1,20 @@
+{% extends 'experiment/egroup_base.html' %}
+{% load static %}
+
+
+{% block pregroup %}
+
+<div id=yourgold>Your Gold: {{ user.gold }}</div>
+
+<div id=buyername>, {{ user.username }}</div>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div id=form>{{ form.as_p }}</div>
+        <button type="submit" name="button" id=buybutton>Buy Now</button>
+    </form>
+
+  <div id=submitbuy></div>
+
+
+{% endblock %}

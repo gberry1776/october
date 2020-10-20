@@ -1,0 +1,68 @@
+{% extends 'experiment/egroup_base.html' %}
+{% load static %}
+{% block pregroup %}
+    <link rel="stylesheet" href="{% static 'antonspro/css/goldexp.css' %}">
+
+<h1>{{name}}</h1>
+<h2>{{name.description}}</h2>
+{% if name.judge.count == 0 %}
+  {% for user in name.members1.all %}
+    <a href="{% url 'experiment:bjudge1' slug=name.slug elnamo=user %}"
+      class="btn btn-lg btn-fill btn-warning"><span
+      class='glyphicon glyphicon-ok-circle'></span>make {{user}} the judge</a>
+    <p></p>
+  {% endfor %}
+{% endif %}
+{% if user in name.judge.all %}
+<a href="{% url 'experiment:unjudge1' slug=name.slug elnamo=user %}"
+  class="btn btn-lg btn-fill btn-warning"><span
+  class='glyphicon glyphicon-ok-circle'></span>Step down from judgeship</a>
+{% endif %}
+
+<div id="userinfo">
+  your gold is:<div id=numb>{{user.gold}}</div>
+  <p></p>
+  <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" name="button">Submit</button>
+  </form>
+  <p></p>
+  {% if user not in name.members1.all %}
+  <a href="{% url 'experiment:join1' slug=name.slug elnamo=name.slug  %}"
+      class="btn btn-lg btn-fill btn-warning"><span
+      class='glyphicon glyphicon-ok-circle'></span>Join room</a>
+  {% endif %}
+{% if user in name.members1.all %}
+  <a href="{% url 'experiment:leave1' slug=name.slug elnamo=name.slug %}"
+      class="btn btn-lg btn-fill btn-warning"><span
+      class='glyphicon glyphicon-remove-circle'></span>Leave room</a>
+{% endif %}
+</div>
+
+<div id="roominfo">
+  Gold in room:<div id=numb>{{name.goldinroom}}</div>
+  Members in room: {{name.members1.count}}
+  {% for user in name.judge.all %}
+    <p>{{user.username}} Is The Judge</p>
+  {% endfor %}
+</div>
+
+<div id="forjudge">
+  {% for person in name.judge.all %}
+    {% if user == person %}
+      {% for user in name.members1.all %}
+        <form method="POST">
+          {% csrf_token %}
+          {{ user.username }}:
+          {{ form3 }}
+          <button type="submit" name="name" value="{{ user.username}}">Assign Gold</button>
+        </form>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+
+{% endblock %}

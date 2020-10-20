@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'antonspro/css/magicclub.css' %}">
+    <script
+          src="http://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id=navbar>
+      <a href="{% url 'magicclub:home' %}"><div id=homenav ></div></a>
+      <a href="{% url 'magicclub:all' %}"><div id=allnav></div></a>
+      <a href="{% url 'magicclub:create' %}"><div id=createnav></div></a>
+    </div>
+
+    <div id="front" class="front"></div>
+    <div id="back" class="back"></div>
+
+
+    <script type="text/javascript" src="{% static 'antonspro/js/magicclub.js' %}">
+    </script>
+  </body>
+</html>

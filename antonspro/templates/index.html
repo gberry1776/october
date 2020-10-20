@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'antonspro/css/sudokurelated.css' %}">
+      <script
+    			  src="http://code.jquery.com/jquery-3.5.1.js"
+    			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    			  crossorigin="anonymous"></script>
+
+
+  </head>
+
+
+  <body>
+    <nav class="navbar mynav" role='navigation' id="bignav">
+      <div class="container">
+        <a class="navbar-brand mynav" href="{% url 'masterpage' %}" id="homenav"></a>
+        <a href="{% url 'about:general' %}" class="navbar-brand mynav" id="aboutnav"></a>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </nav>
+
+      <h1> Hello, thanks for visiting!</h1>
+
+    <a href="{% url 'home' %}">
+      <div id="drivediv" class="drivediv">
+        <p>planet express form</p>
+        <div class="drivemove" id="drivemove"></div>
+      </div>
+    </a>
+
+    <a href="{% url 'sudoku:FillBoard' %}" index='Sulink'>
+      <div id="sudiv" class="sudiv">
+        <p>Sudoku board solver</p>
+        <div class="move" id="move"></div>
+      </div>
+    </a>
+
+    <a href="{% url 'magicclub:home' %}">
+      <div id="magicdiv" class="magicdiv">
+        <p>  Magic Club Thun</p>
+        <div class="magicmove" id="magicmove"></div>
+      </div>
+    </a>
+
+    <a href="{% url 'experiment:all1' %}">
+      <div id="gamblediv" class="gamblediv">
+        <p>Gamble</p>
+        <div class="gamblemove" id="gamblemove"></div>
+      </div>
+    </a>
+
+
+      <div id="adventurediv" class="adventurediv">
+        <p>Adventure Time</p>
+        <div class="noclass" id="noid"></div>
+      </div>
+
+      <div id="hero"></div>
+
+      <div id="warpportal" class="warpportal"></div>
+
+
+
+    <div class="jet" id="jet"></div>
+
+
+
+
+      <script type="text/javascript" src="{% static 'antonspro/js/master.js' %}">
+      </script>
+  </body>
+
+  <a href="{% url 'adventure:start1' %}">adventure time</a>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'antonspro/css/magicclub.css' %}">
+  </head>
+  <body>
+
+    {% block content %}
+
+    <div id=navbar>
+      <a href="{% url 'magicclub:home' %}"><div id=homenav ></div></a>
+      <a href="{% url 'magicclub:all' %}"><div id=allnav></div></a>
+      <a href="{% url 'magicclub:create' %}"><div id=createnav></div></a>
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="row">
+        {% block pregroup %}{% endblock %}
+        {% block group_content %}{% endblock %}
+        {% block postgroup %}{% endblock %}
+      </div>
+    </div>
+
+    {% endblock %}
+
+  </body>
+</html>

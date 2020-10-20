@@ -1,0 +1,47 @@
+body{
+  background-image: url(pics/2background.jpg);
+  background-repeat: no-repeat;
+}
+
+
+#hero{
+  position: absolute;
+  top: 700px;
+  left: 360px;
+  height: 50px;
+  width:50px;
+  background-image: url(pics/hero.jpg);
+  clip-path: polygon(20% 22%, 27% 14%, 36% 10%, 44% 6%, 72% 8%, 78% 20%, 78% 36%, 74% 46%, 82% 48%,
+                     86% 54%, 86% 68%, 74% 86%, 66% 92%, 38% 92%, 24% 78%, 24% 72%, 16% 72%, 18% 50%, 26% 44%, 30% 42%, 26% 42%, 26% 34%);
+}
+
+#door{
+  position: absolute;
+  top: 740px;
+  left: 355px;
+  height: 50px;
+  width:65px;
+  background-color: brown;
+  opacity: 0;
+
+}
+
+#obj1{
+  position: absolute;
+  top: 112px;
+  left: 367px;
+  height: 50px;
+  width:50px;
+  background-color: black;
+  opacity: 0;
+
+}
+
+#text{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  height: 206px;
+  width:299px;
+  background-image: url(pics/gurutext.jpg);
+}

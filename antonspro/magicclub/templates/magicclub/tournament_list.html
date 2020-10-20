@@ -1,0 +1,17 @@
+{% extends 'magicclub/tournament_base.html' %}
+
+
+{% block group_content %}
+
+Recent Events:
+
+{% for group in object_list %}
+  <a href="{% url 'magicclub:swiss' slug=group.slug %}">
+    <div id=rooms>
+      <div id=words>{{group.name}}</div>
+      <div>{{group.description_html|safe}}</div>
+    </div>
+  </a>
+{% endfor %}
+
+{% endblock %}

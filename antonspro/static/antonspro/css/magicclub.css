@@ -1,0 +1,221 @@
+/* **************css for NAVBAR************** */
+
+#navbar{
+  height: 32px;
+  width: 100%;
+  background-color: black;
+  border: solid grey 1px;
+}
+
+#homenav{
+  height:30px;
+  width:63px;
+  background-image: url(magichome.jpg);
+  position:absolute;
+  background-color: grey;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
+#homenav:hover{
+  background-image: url(magichomealt.jpg);
+}
+
+#allnav:hover{
+  background-image: url(tournamenthistoryalt.jpg);
+}
+
+
+#allnav{
+  height:30px;
+  width:242px;
+  background-image: url(tournamenthistory.jpg);
+  position: absolute;
+  left: 75px;
+  background-color: grey;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+#createnav{
+  height:30px;
+  width:130px;
+  position: absolute;
+  left: 320px;
+  background-image: url(magicnewevent.jpg);
+  background-color: grey;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
+#createnav:hover{
+  background-image: url(magicneweventalt.jpg);
+}
+
+#rooms{
+  height:30px;
+  width: 220px;
+  background-color: Black;
+  color: White;
+  font-family:Impact;
+  border: solid grey 1px;
+  border-radius: 3px;
+}
+#words{
+  position: relative;
+  left: 5px;
+  top:4px;
+}
+
+/* **************css for detail page************** */
+
+#addplayers{
+  height:200px;
+  width:200px;
+  background-color: #e8eef7;
+  position: absolute;
+  left: 8px;
+  top: 70px;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding-left: 5px;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#drop{
+  height:100px;
+  width:200px;
+  position: absolute;
+  background-color: #fcefef;
+  left: 8px;
+  top: 280px;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding-left: 5px;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#clubmembers{
+  height:400px;
+  width: 70px;
+  position: absolute;
+  left: 250px;
+  top: 70px;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#pairstand{
+  height:30px;
+  width:200px;
+  position: absolute;
+  left: 8px;
+  top: 390px;
+  border: solid black 1px;
+  border-radius: 5px;
+  color:black;
+  padding-left: 5px;
+  box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#clubmembernames{
+  background-color: black;
+  color: white;
+  border: solid red 1px;
+  margin: 1px;
+}
+
+#save{
+    height:80px;
+    width:170px;
+    position: absolute;
+    left: 8px;
+    top: 490px;
+    border: solid black 1px;
+    color:black;
+    padding-left: 5px;
+    padding-bottom:5px;
+}
+
+#load{
+    height:80px;
+    width:170px;
+    position: absolute;
+    left: 8px;
+    top: 590px;
+    border: solid black 1px;
+    color:black;
+    padding-left: 5px;
+    padding-bottom:5px;
+}
+
+#clear{
+  height:80px;
+  width:170px;
+    position: absolute;
+    left: 8px;
+    top: 690px;
+    border: solid black 1px;
+    color:black;
+    padding-left: 5px;
+    padding-bottom:5px;
+}
+
+
+
+
+/* ******************css for standings********************** */
+
+#standingdiv{
+  box-sizing: border-box;
+}
+
+#word1{
+  float: left;
+  height: 20px;
+  width: 16%;
+  padding: 1px;
+  border: solid black 1px;
+}
+
+#memberpoints{
+
+}
+
+/* ******************css for home********************** */
+
+#front{
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  height: 400px;
+  width:600px;
+  background-image: url(magicclubfront.jpg);
+  opacity: 0.0;
+}
+
+#back{
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  height: 400px;
+  width:600px;
+  background-image: url(magicclubback.jpg);
+  opacity: 0.0;
+}
+
+/* ******************css for universal********************** */
+
+#odd{
+  background-color: #e3e3e3 ;
+  padding: 5px;
+}
+
+#even{
+  background-color: white ;
+  padding: 5px;
+}

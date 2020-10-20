@@ -1,0 +1,23 @@
+{% extends 'magicclub/tournament_base.html' %}
+
+{% block pregroup %}
+
+<a href="{% url 'magicclub:swiss' slug=group.slug %}">Back to adding players</a>
+<a href="{% url 'magicclub:standings' slug=group.slug %}">To standings</a>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form1.as_p }}
+    <button type="submit" name="button">Submit</button>
+</form>
+
+{% for group in table %}
+  <form method="POST" id="{% cycle 'odd' 'even' %}">
+    {% csrf_token %}
+    {{group.0}} {{form2.p1}} vs {{group.1}} {{form2.p2}} on {{group.2}}
+    <button type="submit" name="name" value="{{group.2}}">Record points</button>
+  </form>
+{% endfor %}
+{{bye}} has the bye
+
+{% endblock %}

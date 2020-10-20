@@ -1,0 +1,72 @@
+{% extends 'magicclub/tournament_base.html' %}
+
+{% block pregroup %}
+Players: {{ group.players|length }} 
+<div id=addplayers>
+  <div id=contents>
+  <form method="POST">
+      {% csrf_token %}
+      {{ form1.as_p }}
+      <button type="submit" name="button">add player</button>
+  </form>
+  </div>
+
+{% for person in group.players %}
+  {{ person.0 }}
+{% endfor %}
+
+</div>
+
+<div id=drop>
+<form method="POST">
+    {% csrf_token %}
+    {{ form2.as_p }}
+    <button type="submit" name="button">Drop player</button>
+</form>
+</div>
+
+<div id=clubmembers>
+{% for playuh in group.clubmembers %}
+  {% if playuh in group.tempplayers %}
+    {% else %}
+      <form method="POST" id='one'>
+          {% csrf_token %}
+          <button type="submit" name="name" value="{{playuh}}" id=clubmembernames>{{ playuh }}</button>
+      </form>
+  {% endif %}
+{% endfor %}
+</div>
+
+<div id=save>
+<form method="POST">
+    {% csrf_token %}
+    {{ form4.as_p }}
+    <button type="submit" name="button">Save progress</button>
+</form>
+</div>
+
+<div id=load>
+  <form method="POST">
+      {% csrf_token %}
+      {{ form5.as_p }}
+      <button type="submit" name="button">Load last save</button>
+  </form>
+</div>
+
+<div id=clear>
+  <form method="POST">
+      {% csrf_token %}
+      {{ form6.as_p }}
+      <button type="submit" name="button">Clear Player-list</button>
+  </form>
+</div>
+
+
+<div id=pairstand>
+<a href="{% url 'magicclub:pairings' slug=group.slug %}">To pairings</a> |
+<a href="{% url 'magicclub:standings' slug=group.slug %}">To standings</a>
+</div>
+
+
+
+{% endblock %}

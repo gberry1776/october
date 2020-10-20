@@ -1,0 +1,20 @@
+{% extends 'experiment/egroup_base.html' %}
+{% load static %}
+
+
+
+{% block group_content %}
+<link rel="stylesheet" href="{% static 'antonspro/css/goldexp.css' %}">
+
+
+        {% for group in object_list %}
+          <a href="{% url 'experiment:single1' slug=group.slug elnamo=group.slug %}">
+            <div id=rooms>
+              <div id=words>{{group.name}}</div>
+              <div>{{group.description_html|safe}}</div>
+            </div>
+          </a>
+
+        {% endfor %}
+
+{% endblock %}

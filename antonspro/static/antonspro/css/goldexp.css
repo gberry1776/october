@@ -1,0 +1,188 @@
+#userinfo {
+  border: 2px solid black;
+  color: #d1ecff;
+  height: 160px;
+  width:240px;
+  position:absolute;
+  left:10px;
+  top:380px;
+  border-radius:5px;
+  color:black;
+  background-color: white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+#roominfo {
+  border: 2px solid black;
+  height: 100px;
+  width:140px;
+  position:absolute;
+  left:300px;
+  top:40px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif ;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+#forjudge {
+  border: 2px solid black;
+  border-bottom-width:0px;
+  height: 160px;
+  width:180px;
+  position:absolute;
+  left:80px;
+  top:680px;
+  border-radius:5px;
+  color:black;
+  background-color:white;
+  font-family: Impact,sans-serif;
+
+}
+
+#navbar {
+  height: 30px;
+  width:100%;
+  background-color: black;
+}
+
+#navhome {
+  background-image: url(exphome.jpg);
+  height:28px;
+  width: 100px;
+  position:absolute;
+  top:8px;
+  left:8px;
+  border: solid black 1px ;
+  border-right-width: 1px;
+  border-right-color: white;
+}
+
+#myroomsnav {
+  background-image: url(myrooms.jpg);
+  height:30px;
+  width:100px;
+  position: absolute;
+  top: 8px;
+  left:520px;
+  border: solid black 0px;
+  border-left-width:1px;
+  border-left-color: white;
+}
+
+#createnav {
+  background-image: url(createnav.jpg);
+  height: 28px;
+  width: 180px;
+  position:absolute;
+  top: 9px;
+  left: 115px;
+}
+
+#rooms {
+  height:30px;
+  width:300px;
+  background-color: Black;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid White;
+  margin: 5px;
+  color: white;
+}
+
+#words {
+  background-color: black;
+  color: white;
+  position: relative;
+  left: 10px;
+  top: 3px;
+  width: 250px;
+}
+
+body {
+  background-color: #3d3d3d;
+}
+
+#dice {
+  background-image: url(dice.jpg);
+  width:30px;
+  height: 30px;
+  position: absolute;
+  left: 300px;
+  top: 8px;
+  border: 0px solid black;
+  border-right: 1px solid white;
+}
+
+#numb {
+  background-color: white;
+  color: Red;
+  position: absolute;
+  left:90px;
+  top: 0px;
+}
+
+#getgoldnav {
+  background-image: url(getgold.jpg);
+  position: absolute;
+  left: 350px;
+  top:8px;
+  height: 30px;
+  width:160px;
+}
+
+#submitbuy {
+  position: absolute;
+  top: 100px;
+  left:100px;
+  height: 442px;
+  width: 452px;
+  background-image: url(buygold.jpg);
+  z-index: 1;
+}
+
+#buybutton {
+  position: absolute;
+  top: 377px;
+  left:120px;
+  height:47px;
+  width:413px;
+  z-index: 100;
+  border-radius: 5px;
+  background-color: #0070ba;
+
+}
+#buybutton:hover{
+  background-color:grey;
+}
+
+#form {
+  position: absolute;
+  top: 140px;
+  left: 120px;
+  height:100px;
+  width:100px;
+  z-index: 101;
+}
+
+#buyername {
+  position: absolute;
+  top:207px;
+  left: 140px;
+  height: 100px;
+  width: 100px;
+  z-index: 101;
+
+}
+
+#yourgold {
+  position: absolute;
+  top:55px;
+  left:10px;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'antonspro/css/goldexp.css' %}">
+
+  </head>
+
+  <body>
+{% block content %}
+
+<div id=navbar></div>
+
+<a href="{% url 'experiment:all1' %}"><div id=navhome></div></a>
+<a href="{% url 'experiment:create1' %}"><div id=createnav></div></a>
+<div id=dice></div>
+<a href="{% url 'buy' %}"><div id=getgoldnav></div></a>
+<a href="{% url 'experiment:myrooms' %}"><div id=myroomsnav></div></a>
+
+
+
+<div class="container">
+  <div class="row">
+    {% block pregroup %}{% endblock %}
+    {% block group_content %}{% endblock %}
+    {% block postgroup %}{% endblock %}
+  </div>
+</div>
+
+{% endblock %}
+
+</body>
+
+</html>

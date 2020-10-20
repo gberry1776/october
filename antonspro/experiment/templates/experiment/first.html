@@ -1,0 +1,15 @@
+{% extends 'experiment/egroup_base.html' %}
+{% load static %}
+{% block pregroup %}
+
+Rooms you are currently a part of:
+
+{% for room in object_list %}
+  <a href="{% url 'experiment:single1' slug=room.group.slug elnamo=room.group.slug %}">
+    <div id=rooms>
+      <div id=words>{{room.group}}</div>
+    </div>
+  </a>
+{% endfor %}
+
+{% endblock %}

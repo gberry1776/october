@@ -1,0 +1,33 @@
+{% extends 'magicclub/tournament_base.html' %}
+
+{% block pregroup %}
+
+<a href="{% url 'magicclub:pairings' slug=group.slug %}">To pairings</a>
+<a href="{% url 'magicclub:swiss' slug=group.slug %}">Back to adding players</a>
+<p></p>
+
+<div id=standingdiv>
+  <div id=word1>Place</div><div id=word1>Name</div><div id=word1>Wins</div><div id=word1>T1</div><div id=word1>T2</div><div id=word1>T3</div>
+</div>
+
+{% for item in standings1 %}
+  <div id=standingdiv>
+    <div id=word1>{{ forloop.counter}}</div><div id=word1>{{ item.0 }}</div><div id=word1>{{ item.1 }}</div><div id=word1>{{ item.2 }}</div><div id=word1>{{ item.3 }}</div><div id=word1>{{ item.4 }}</div>
+  </div>
+{% endfor %}
+
+
+
+<div id=memberpoints>
+Save Club members points:
+<form method="POST">
+    {% csrf_token %}
+    {{ recordclub.as_p }}
+    <button type="submit" name="button">Submit</button>
+</form>
+</div>
+
+
+
+
+{% endblock %}

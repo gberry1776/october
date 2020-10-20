@@ -1,0 +1,59 @@
+#homenav {
+  border-radius: 5px;
+  margin-top: 4px;
+  padding-right: 61px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height: 40px;
+  width: 80px;
+  background-image: url(navbarpic.jpg);
+  background-position: 80px;
+  color: #B0B0B0;
+
+}
+
+#aboutnav {
+  position: relative;
+  left: 30px;
+  border-radius: 5px;
+  margin-top: 4px;
+  padding-right: 61px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height: 40px;
+  width: 80px;
+  background-image: url(navbarabout.jpg);
+  background-position: 80px;
+  color: #B0B0B0;
+}
+
+#bignav {
+  border-bottom: 1px solid grey;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+nav {
+  background-color: white;
+}
+
+#sidenav {
+  width: 200px;
+}
+
+#GeneralB {
+  border-right-color: white;
+}
+
+#textbox {
+  height:500px;
+  width:500px;
+  position:absolute;
+  top:73px;
+  left:200px;
+  background-color: white;
+
+
+}
